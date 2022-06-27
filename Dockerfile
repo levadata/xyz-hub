@@ -9,10 +9,10 @@ ENV LOG_PATH /var/log/xyz
 ENV FS_WEB_ROOT www
 
 #Override the following environment variables to let the service connect to different host names
-ENV STORAGE_DB_URL jdbc:postgresql://postgres/postgres
+ENV STORAGE_DB_URL jdbc:postgresql://localhost/postgres
 ENV PSQL_HOST postgres
-ENV XYZ_HUB_REDIS_URI redis://redis
-ENV PSQL_HTTP_CONNECTOR_HOST xyz-http-connector
+ENV XYZ_HUB_REDIS_URI redis://localhost
+ENV PSQL_HTTP_CONNECTOR_HOST localhost
 
 COPY xyz-hub-service/target/xyz-hub-service.jar .
 ADD Dockerfile /

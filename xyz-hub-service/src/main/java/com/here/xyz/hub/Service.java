@@ -341,7 +341,7 @@ public class Service extends Core {
    */
   public static String getEnvironmentIdentifier() {
     if (configuration.ENVIRONMENT_NAME == null) return "default";
-    if (configuration.AWS_REGION != null) return configuration.ENVIRONMENT_NAME + "_" + configuration.AWS_REGION;
+//    if (configuration.AWS_REGION != null) return configuration.ENVIRONMENT_NAME + "_" + configuration.AWS_REGION;
     return configuration.ENVIRONMENT_NAME;
   }
 
