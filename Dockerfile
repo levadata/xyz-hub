@@ -9,7 +9,7 @@ ENV LOG_PATH /var/log/xyz
 ENV FS_WEB_ROOT www
 
 #Override the following environment variables to let the service connect to different host names
-ENV STORAGE_DB_URL jdbc:postgresql://localhost/postgres
+ENV STORAGE_DB_URL jdbc:postgresql://xyzpostgres.private-levadata.xyz/postgres
 ENV PSQL_HOST postgres
 ENV XYZ_HUB_REDIS_URI redis://localhost
 ENV PSQL_HTTP_CONNECTOR_HOST localhost
